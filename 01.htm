@@ -1,0 +1,1829 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 12">
+<meta name=Originator content="Microsoft Word 12">
+<link rel=File-List href="01.files/filelist.xml">
+<title>ЛР01. Ввод и вывод данных, оператор присваивания</title>
+<link rel=themeData href="01.files/themedata.thmx">
+<link rel=colorSchemeMapping href="01.files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>110</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>RU</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:204;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1107305727 0 0 415 0;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;
+	mso-font-charset:204;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-520092929 1073806591 9 0 415 0;}
+@font-face
+	{font-family:"Wingdings 2";
+	panose-1:5 2 1 2 1 5 7 7 7 7;
+	mso-font-charset:2;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Заголовок 1 Знак";
+	margin-top:7.5pt;
+	margin-right:7.5pt;
+	margin-bottom:0cm;
+	margin-left:7.5pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:20.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:bold;}
+h2
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Заголовок 2 Знак";
+	margin-top:3.75pt;
+	margin-right:7.5pt;
+	margin-bottom:0cm;
+	margin-left:7.5pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:16.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:bold;}
+p
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	margin-top:0cm;
+	margin-right:7.5pt;
+	margin-bottom:0cm;
+	margin-left:7.5pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+code
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+pre
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Стандартный HTML Знак";
+	margin-top:3.75pt;
+	margin-right:7.5pt;
+	margin-bottom:0cm;
+	margin-left:45.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+span.1
+	{mso-style-name:"Заголовок 1 Знак";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Заголовок 1";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#365F91;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-weight:bold;}
+span.2
+	{mso-style-name:"Заголовок 2 Знак";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Заголовок 2";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	font-weight:bold;}
+span.HTML
+	{mso-style-name:"Стандартный HTML Знак";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Стандартный HTML";
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Consolas;
+	mso-bidi-font-family:Consolas;}
+p.ptauthor, li.ptauthor, div.ptauthor
+	{mso-style-name:ptauthor;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:7.5pt;
+	margin-bottom:0cm;
+	margin-left:7.5pt;
+	margin-bottom:.0001pt;
+	text-align:right;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-style:italic;}
+span.pttask
+	{mso-style-name:"pttask Знак";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:pttask;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.pttask0, li.pttask0, div.pttask0
+	{mso-style-name:pttask;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-link:"pttask Знак";
+	margin-top:3.75pt;
+	margin-right:7.5pt;
+	margin-bottom:0cm;
+	margin-left:45.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-37.5pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.pttaskquote, li.pttaskquote, div.pttaskquote
+	{mso-style-name:pttaskquote;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:7.5pt;
+	margin-bottom:0cm;
+	margin-left:90.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.pttaskcenter, li.pttaskcenter, div.pttaskcenter
+	{mso-style-name:pttaskcenter;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:7.5pt;
+	margin-bottom:0cm;
+	margin-left:45.0pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.pttaskcontinue, li.pttaskcontinue, div.pttaskcontinue
+	{mso-style-name:pttaskcontinue;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:7.5pt;
+	margin-bottom:0cm;
+	margin-left:45.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.ptcomment, li.ptcomment, div.ptcomment
+	{mso-style-name:ptcomment;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	margin-top:3.75pt;
+	margin-right:7.5pt;
+	margin-bottom:0cm;
+	margin-left:7.5pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:37.5pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.ptcommentcenter, li.ptcommentcenter, div.ptcommentcenter
+	{mso-style-name:ptcommentcenter;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:7.5pt;
+	margin-bottom:0cm;
+	margin-left:7.5pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.ptcommentquote, li.ptcommentquote, div.ptcommentquote
+	{mso-style-name:ptcommentquote;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:7.5pt;
+	margin-bottom:0cm;
+	margin-left:90.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.ptcommentcontinue, li.ptcommentcontinue, div.ptcommentcontinue
+	{mso-style-name:ptcommentcontinue;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:7.5pt;
+	margin-bottom:0cm;
+	margin-left:7.5pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.ptfooter, li.ptfooter, div.ptfooter
+	{mso-style-name:ptfooter;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:7.5pt;
+	margin-bottom:.0001pt;
+	text-align:right;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-style:italic;}
+p.ptpicture, li.ptpicture, div.ptpicture
+	{mso-style-name:ptpicture;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	margin-top:3.75pt;
+	margin-right:7.5pt;
+	margin-bottom:3.75pt;
+	margin-left:45.0pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:navy;}
+span.20
+	{mso-style-name:"Заг2 Знак";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"Заголовок 2 Знак";
+	mso-style-link:Заг2;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Arial","sans-serif";
+	mso-ascii-font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	background:#DAEEF3;
+	mso-shading-themecolor:accent5;
+	mso-shading-themetint:51;
+	font-weight:bold;}
+p.21, li.21, div.21
+	{mso-style-name:Заг2;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"Заголовок 2";
+	mso-style-link:"Заг2 Знак";
+	margin-top:3.75pt;
+	margin-right:7.5pt;
+	margin-bottom:0cm;
+	margin-left:7.5pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	background:#DAEEF3;
+	mso-background-themecolor:accent5;
+	mso-background-themetint:51;
+	border:none;
+	mso-border-top-alt:solid windowtext .5pt;
+	mso-border-bottom-alt:solid windowtext .5pt;
+	padding:0cm;
+	mso-padding-alt:1.0pt 0cm 1.0pt 0cm;
+	font-size:16.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+span.10
+	{mso-style-name:"Обыч1 Знак";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"pttask Знак";
+	mso-style-link:Обыч1;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.11, li.11, div.11
+	{mso-style-name:Обыч1;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:pttask;
+	mso-style-link:"Обыч1 Знак";
+	margin-top:3.0pt;
+	margin-right:7.35pt;
+	margin-bottom:3.0pt;
+	margin-left:35.7pt;
+	text-align:justify;
+	text-indent:-1.0cm;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+span.ptspecial
+	{mso-style-name:ptspecial;
+	mso-style-unhide:no;
+	font-family:"Arial","sans-serif";
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Обычная таблица";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+table.MsoTableGrid
+	{mso-style-name:"Сетка таблицы";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:59;
+	mso-style-unhide:no;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="15362"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=RU style='tab-interval:35.4pt'>
+
+<div class=WordSection1>
+
+<h2 style='margin-top:3.0pt;margin-right:7.35pt;margin-bottom:0cm;margin-left:
+7.35pt;margin-bottom:.0001pt;background:#DAEEF3;mso-background-themecolor:accent5;
+mso-background-themetint:51'><span style='font-weight:normal;mso-bidi-font-weight:
+bold'>ЛР01. Ввод и&nbsp;вывод данных, оператор присваивания<o:p></o:p></span></h2>
+
+<p class=MsoNormal style='margin-top:3.75pt;margin-right:7.35pt;margin-bottom:
+0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-indent:-62.35pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-top:3.75pt;margin-right:7.35pt;margin-bottom:
+0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-indent:-62.35pt'>Каждую
+программу сохраняйте (кн. <span style='font-family:Wingdings;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;
+mso-symbol-font-family:Wingdings'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Wingdings'>&lt;</span></span>) в папке своей учебной группы под именем задания,
+например:<span style='mso-spacerun:yes'>  
+</span>C:\PABCWork.NET\310\ABegin01.pas</p>
+
+<p class=MsoNormal style='margin-top:3.75pt;margin-right:7.35pt;margin-bottom:
+0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-indent:-62.35pt'>В первой строке
+программы должен быть комментарий, содержащий номер задания, например:<span
+style='mso-spacerun:yes'>   </span>// ABegin01.</p>
+
+<p class=MsoNormal style='margin-top:3.75pt;margin-right:7.35pt;margin-bottom:
+0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-indent:-62.35pt'>При переходе
+к новому заданию (кн. ) не закрывайте вкладку с предыдущим заданием (чтобы
+показать преподавателю).</p>
+
+<p class=MsoNormal style='margin-top:3.75pt;margin-right:7.35pt;margin-bottom:
+0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-indent:-62.35pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-top:3.75pt;margin-right:7.35pt;margin-bottom:
+0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-indent:-62.35pt'>Разделы
+справочной системы: <br>
+– <span class=GramE>Справочник по языку – Структура программы – Структура
+программы: обзор;<br>
+– Справочник по языку – Структура программы – Описание переменных;<br>
+– Справочник по языку – Операторы – Оператор присваивания;<br>
+<span class=ptspecial><span style='mso-bidi-font-size:14.0pt;font-family:"Times New Roman","serif"'>–
+Справочник по языку – </span></span><span class=ptspecial><span
+style='font-family:"Times New Roman","serif"'>Системный модуль </span></span><span
+class=SpellE><span class=ptspecial><span lang=EN-US style='font-family:"Times New Roman","serif";
+mso-ansi-language:EN-US'>PABCSystem</span></span></span><span class=ptspecial><span
+style='mso-bidi-font-size:14.0pt;font-family:"Times New Roman","serif"'> – </span></span><span
+class=ptspecial><span style='font-family:"Times New Roman","serif"'>Подпрограммы
+ввода, Подпрограммы вывода</span></span>.</span><span style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span style='font-size:
+14.0pt'>01. Дана сторона квадрата&nbsp;<span class=SpellE><i style='mso-bidi-font-style:
+normal'>a</i></span>. Найти его периметр&nbsp;<i style='mso-bidi-font-style:
+normal'>P</i>&nbsp;=&nbsp;4·<span class=SpellE><i style='mso-bidi-font-style:
+normal'>a</i></span>. <o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><i style='mso-bidi-font-style:normal'><span
+style='mso-bidi-font-size:14.0pt'>Пример решения:<o:p></o:p></span></i></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width="50%" valign=top style='width:50.0%;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=pttask0 align=left style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:7.35pt;margin-bottom:.0001pt;text-align:left;
+  text-indent:0cm'><i style='mso-bidi-font-style:normal'>В стиле PascalABC.NET<o:p></o:p></i></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=pttask0 align=left style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:7.35pt;margin-bottom:.0001pt;text-align:left;
+  text-indent:0cm'><i style='mso-bidi-font-style:normal'>В стиле <span
+  class=SpellE>Object</span> <span class=SpellE>Pascal</span></i><i
+  style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+  EN-US'><o:p></o:p></span></i></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width="50%" valign=top style='width:50.0%;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+  color:green;mso-ansi-language:EN-US'>##<o:p></o:p></span></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+  color:green;mso-ansi-language:EN-US'>// ABegin01<o:p></o:p></span></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><span lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:
+  "Times New Roman";color:black;mso-ansi-language:EN-US'>var</span></b></span><b><span
+  lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+  color:black;mso-ansi-language:EN-US'> </span></b><span lang=EN-US
+  style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+  color:black;mso-ansi-language:EN-US'>a:=<span class=SpellE>ReadReal</span>(</span><span
+  lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+  color:blue;mso-ansi-language:EN-US'>'a = '</span><span lang=EN-US
+  style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+  color:black;mso-ansi-language:EN-US'>);<o:p></o:p></span></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><span lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:
+  "Times New Roman";color:black;mso-ansi-language:EN-US'>var</span></b></span><b><span
+  lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+  color:black;mso-ansi-language:EN-US'> </span></b><span lang=EN-US
+  style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+  color:black;mso-ansi-language:EN-US'>P:= </span><span lang=EN-US
+  style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+  color:darkgreen;mso-ansi-language:EN-US'>4 </span><span lang=EN-US
+  style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+  color:black;mso-ansi-language:EN-US'>* a;<o:p></o:p></span></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+  color:black;mso-ansi-language:EN-US'>Print(</span><span lang=EN-US
+  style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+  color:blue;mso-ansi-language:EN-US'>'P = '</span><span lang=EN-US
+  style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+  color:black;mso-ansi-language:EN-US'>, P);</span><span lang=EN-US
+  style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-left:7.35pt;mso-layout-grid-align:none;
+  text-autospace:none'><b><span lang=EN-US style='font-family:"Courier New";
+  mso-fareast-font-family:"Times New Roman";color:black;mso-ansi-language:EN-US'>program
+  </span></b><span lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:
+  "Times New Roman";color:black;mso-ansi-language:EN-US'>ABegin01;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:7.35pt;mso-layout-grid-align:none;
+  text-autospace:none'><span lang=EN-US style='font-family:"Courier New";
+  mso-fareast-font-family:"Times New Roman";color:black;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-left:7.35pt;mso-layout-grid-align:none;
+  text-autospace:none'><span class=SpellE><b><span lang=EN-US style='font-family:
+  "Courier New";mso-fareast-font-family:"Times New Roman";color:black;
+  mso-ansi-language:EN-US'>var</span></b></span><b><span lang=EN-US
+  style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+  color:black;mso-ansi-language:EN-US'><o:p></o:p></span></b></p>
+  <p class=MsoNormal style='margin-left:7.35pt;mso-layout-grid-align:none;
+  text-autospace:none'><b><span lang=EN-US style='font-family:"Courier New";
+  mso-fareast-font-family:"Times New Roman";color:black;mso-ansi-language:EN-US'><span
+  style='mso-spacerun:yes'>  </span></span></b><span lang=EN-US
+  style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+  color:black;mso-ansi-language:EN-US'>P, a: </span><span lang=EN-US
+  style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+  color:blue;mso-ansi-language:EN-US'>Real</span><span lang=EN-US
+  style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+  color:black;mso-ansi-language:EN-US'>;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:7.35pt;mso-layout-grid-align:none;
+  text-autospace:none'><span lang=EN-US style='font-family:"Courier New";
+  mso-fareast-font-family:"Times New Roman";color:black;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-left:7.35pt;mso-layout-grid-align:none;
+  text-autospace:none'><b><span lang=EN-US style='font-family:"Courier New";
+  mso-fareast-font-family:"Times New Roman";color:black;mso-ansi-language:EN-US'>begin<o:p></o:p></span></b></p>
+  <p class=MsoNormal style='margin-left:7.35pt;mso-layout-grid-align:none;
+  text-autospace:none'><b><span lang=EN-US style='font-family:"Courier New";
+  mso-fareast-font-family:"Times New Roman";color:black;mso-ansi-language:EN-US'><span
+  style='mso-spacerun:yes'>  </span></span></b><span lang=EN-US
+  style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+  color:black;mso-ansi-language:EN-US'>Write(</span><span lang=EN-US
+  style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+  color:blue;mso-ansi-language:EN-US'>'a = '</span><span lang=EN-US
+  style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+  color:black;mso-ansi-language:EN-US'>);<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:7.35pt;mso-layout-grid-align:none;
+  text-autospace:none'><span lang=EN-US style='font-family:"Courier New";
+  mso-fareast-font-family:"Times New Roman";color:black;mso-ansi-language:EN-US'><span
+  style='mso-spacerun:yes'>  </span><span class=SpellE>Readln</span>(a);<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:7.35pt;mso-layout-grid-align:none;
+  text-autospace:none'><span lang=EN-US style='font-family:"Courier New";
+  mso-fareast-font-family:"Times New Roman";color:black;mso-ansi-language:EN-US'><span
+  style='mso-spacerun:yes'>  </span>P := </span><span lang=EN-US
+  style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+  color:darkgreen;mso-ansi-language:EN-US'>4 </span><span lang=EN-US
+  style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+  color:black;mso-ansi-language:EN-US'>* a;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:7.35pt;mso-layout-grid-align:none;
+  text-autospace:none'><span lang=EN-US style='font-family:"Courier New";
+  mso-fareast-font-family:"Times New Roman";color:black;mso-ansi-language:EN-US'><span
+  style='mso-spacerun:yes'>  </span><span class=SpellE>Writeln</span>(</span><span
+  lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+  color:blue;mso-ansi-language:EN-US'>'P = '</span><span lang=EN-US
+  style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+  color:black;mso-ansi-language:EN-US'>, P);<o:p></o:p></span></p>
+  <p class=pttask0 align=left style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:7.35pt;margin-bottom:.0001pt;text-align:left;
+  text-indent:0cm'><span class=SpellE><b><span style='font-family:"Courier New";
+  mso-fareast-font-family:"Times New Roman";color:black'>end</span></b></span><span
+  style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+  color:black'>.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span style='font-size:
+14.0pt'>0<span class=ptspecial><span style='font-family:"Times New Roman","serif"'>2</span></span>.
+Дана сторона квадрата&nbsp;<span class=SpellE><i>a</i></span>. Найти его
+площадь&nbsp;<i>S</i>&nbsp;=&nbsp;<i>a</i><sup>2</sup>. <o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span style='font-size:
+14.0pt'>0<span class=ptspecial><span style='font-family:"Times New Roman","serif"'>3</span></span>.
+Даны стороны прямоугольника&nbsp;<span class=SpellE><i>a</i></span> и&nbsp;<span
+class=SpellE><i>b</i></span>. Найти его площадь&nbsp;<i>S</i>&nbsp;=&nbsp;<span
+class=SpellE><i>a</i></span>·<span class=SpellE><i>b</i></span> и
+периметр&nbsp;<i>P</i>&nbsp;=&nbsp;2·(<span class=SpellE><i>a</i></span>&nbsp;+&nbsp;<span
+class=SpellE><i>b</i></span>). <o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span style='font-size:
+14.0pt'>0<span class=ptspecial><span style='font-family:"Times New Roman","serif"'>4</span></span>.
+Дан диаметр окружности&nbsp;<span class=SpellE><i>d</i></span>. Найти ее
+длину&nbsp;<i>L</i>&nbsp;=&nbsp;<span class=SpellE>&#960;</span>·<span
+class=SpellE><i>d</i></span>. <o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span style='font-size:
+14.0pt'>0<span class=ptspecial><span style='font-family:"Times New Roman","serif"'>5</span></span>.
+Дана длина ребра куба&nbsp;<span class=SpellE><i>a</i></span>. Найти объем
+куба&nbsp;<i>V</i>&nbsp;=&nbsp;<i>a</i><sup>3</sup> и площадь его
+поверхности&nbsp;<i>S</i>&nbsp;=&nbsp;6·<i>a</i><sup>2</sup>. <o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span style='font-size:
+14.0pt'>0<span class=ptspecial><span style='font-family:"Times New Roman","serif"'>6</span></span>.
+Даны длины ребер&nbsp;<span class=SpellE><i>a</i></span>, <span class=SpellE><i>b</i></span>,
+<span class=SpellE><i>c</i></span> прямоугольного параллелепипеда. Найти его
+объем&nbsp;<i>V</i>&nbsp;=&nbsp;<span class=SpellE><i>a</i></span><i>·<span
+class=SpellE>b</span>·<span class=SpellE>c</span></i> и площадь поверхности&nbsp;<i>S</i>&nbsp;=&nbsp;2·(<span
+class=SpellE><i>a</i></span><i>·<span class=SpellE>b</span></i>&nbsp;+&nbsp;<span
+class=SpellE><i>b</i></span><i>·<span class=SpellE>c</span></i>&nbsp;+&nbsp;<span
+class=SpellE><i>a</i></span><i>·<span class=SpellE>c</span></i>). <o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span style='font-size:
+14.0pt'>0<span class=ptspecial><span style='font-family:"Times New Roman","serif"'>7</span></span>.
+Найти длину окружности&nbsp;<i>L</i> и площадь круга&nbsp;<i>S</i> заданного
+радиуса&nbsp;<i>R</i>:<span style='mso-spacerun:yes'>        </span><i>L</i>&nbsp;=&nbsp;2·<span
+class=SpellE>&#960;</span>·<i>R</i>, &nbsp; &nbsp; &nbsp; &nbsp;<i>S</i>&nbsp;=&nbsp;<span
+class=SpellE>&#960;</span>·<i>R</i><sup>2</sup>.<o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span style='font-size:
+14.0pt'>0<span class=ptspecial><span style='font-family:"Times New Roman","serif"'>8</span></span>.
+Даны два числа&nbsp;<span class=SpellE><i>a</i></span> и&nbsp;<span
+class=SpellE><i>b</i></span>. Найти их <i>среднее арифметическое</i>: (<span
+class=SpellE><i>a</i></span>&nbsp;+&nbsp;<span class=SpellE><i>b</i></span>)/2.
+<o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span style='font-size:
+14.0pt'>0<span class=ptspecial><span style='font-family:"Times New Roman","serif"'>9</span></span>.
+Даны два неотрицательных числа&nbsp;<span class=SpellE><i>a</i></span> и&nbsp;<span
+class=SpellE><i>b</i></span>. Найти их <i>среднее геометрическое</i>,
+т.&nbsp;е. квадратный корень из их произведения: (<span class=SpellE><i>a</i></span>·<span
+class=SpellE><i>b</i></span>)<sup>1/2</sup>. </span><span class=GramE><i
+style='mso-bidi-font-style:normal'><span style='font-size:10.0pt;mso-bidi-font-size:
+14.0pt'>При</span></i></span><i style='mso-bidi-font-style:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'> а=10.0 b=9.2 результат:
+9.59<o:p></o:p></span></i></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span class=ptspecial><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>10</span></span><span
+style='font-size:14.0pt'>. Даны два ненулевых числа. Найти сумму, разность,
+произведение и частное их квадратов. </span><span class=GramE><i
+style='mso-bidi-font-style:normal'><span style='font-size:10.0pt;mso-bidi-font-size:
+14.0pt'>При</span></i></span><i style='mso-bidi-font-style:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'> а=3.7 b=1.6 результат:
+сумма квадратов=16.25 разность: 11.13 произведение: 35.05 частное: 5.35</span></i><span
+style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span class=ptspecial><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>11</span></span><span
+style='font-size:14.0pt'>. Даны два ненулевых числа. Найти сумму, разность,
+произведение и частное их модулей. </span><span class=GramE><i
+style='mso-bidi-font-style:normal'><span style='font-size:10.0pt;mso-bidi-font-size:
+14.0pt'>При</span></i></span><i style='mso-bidi-font-style:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'> <span class=SpellE>а=</span>–8.1
+b=10.2 результат: сумма модулей=18.30 разность: –2.10 произведение: 82.62
+частное: 0.79</span></i><span style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span class=ptspecial><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>12</span></span><span
+style='font-size:14.0pt'>. Даны катеты прямоугольного треугольника&nbsp;<span
+class=SpellE><i>a</i></span> и&nbsp;<span class=SpellE><i>b</i></span>. Найти
+его гипотенузу&nbsp;<span class=SpellE><i>c</i></span> и периметр&nbsp;<i>P</i>:<span
+style='mso-spacerun:yes'>      </span><span class=SpellE><i>c</i></span>&nbsp;=&nbsp;(<i>a</i><sup>2</sup>&nbsp;+&nbsp;<i>b</i><sup>2</sup>)<sup>1/2</sup>,
+&nbsp; &nbsp; &nbsp; &nbsp;<i>P</i>&nbsp;=&nbsp;<span class=SpellE><i>a</i></span>&nbsp;+&nbsp;<span
+class=SpellE><i>b</i></span>&nbsp;+&nbsp;<span class=SpellE><i>c</i></span>.</span><i
+style='mso-bidi-font-style:normal'><span style='font-size:10.0pt;mso-bidi-font-size:
+14.0pt'> При а=9.6 b=2.1 результат: с=9.83 <span class=GramE>Р</span>=21.53</span></i><span
+style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span class=ptspecial><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>13</span></span><span
+style='font-size:14.0pt'>. Даны два круга с общим центром и радиусами&nbsp;<i>R</i><sub>1</sub>
+и&nbsp;<i>R</i><sub>2</sub> (<i>R</i><sub>1</sub>&nbsp;&gt;&nbsp;<i>R</i><sub>2</sub>).
+Найти площади этих кругов&nbsp;<i>S</i><sub>1</sub> и&nbsp;<i>S</i><sub>2</sub>,
+а также площадь&nbsp;<i>S</i><sub>3</sub> кольца, внешний радиус которого
+равен&nbsp;<i>R</i><sub>1</sub>, а внутренний радиус равен&nbsp;<i>R</i><sub>2</sub>:<span
+style='mso-spacerun:yes'>      </span><i>S</i><sub>1</sub>&nbsp;=&nbsp;<span
+class=SpellE>&#960;</span>·(<i>R</i><sub>1</sub>)<sup>2</sup>, &nbsp; &nbsp;
+&nbsp; &nbsp;<i>S</i><sub>2</sub>&nbsp;=&nbsp;<span class=SpellE>&#960;</span>·(<i>R</i><sub>2</sub>)<sup>2</sup>,
+&nbsp; &nbsp; &nbsp; &nbsp;<i>S</i><sub>3</sub>&nbsp;=&nbsp;<i>S</i><sub>1</sub>&nbsp;&#8722;&nbsp;<i>S</i><sub>2</sub>.</span><i
+style='mso-bidi-font-style:normal'><span style='font-size:10.0pt;mso-bidi-font-size:
+14.0pt'> При </span></i><i style='mso-bidi-font-style:normal'><span lang=EN-US
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US'>R</span></i><i
+style='mso-bidi-font-style:normal'><sub><span style='font-size:10.0pt;
+mso-bidi-font-size:14.0pt'>1</span></sub></i><i style='mso-bidi-font-style:
+normal'><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>=5.0 </span></i><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-size:10.0pt;
+mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US'>R</span></i><i
+style='mso-bidi-font-style:normal'><sub><span style='font-size:10.0pt;
+mso-bidi-font-size:14.0pt'>2</span></sub></i><i style='mso-bidi-font-style:
+normal'><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>=1.0
+результат: </span></i><i style='mso-bidi-font-style:normal'><span lang=EN-US
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US'>S</span></i><i
+style='mso-bidi-font-style:normal'><sub><span style='font-size:10.0pt;
+mso-bidi-font-size:14.0pt'>1</span></sub></i><i style='mso-bidi-font-style:
+normal'><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>=78.50 </span></i><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-size:10.0pt;
+mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US'>S</span></i><i
+style='mso-bidi-font-style:normal'><sub><span style='font-size:10.0pt;
+mso-bidi-font-size:14.0pt'>2</span></sub></i><i style='mso-bidi-font-style:
+normal'><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>=3.14 </span></i><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-size:10.0pt;
+mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US'>S</span></i><i
+style='mso-bidi-font-style:normal'><sub><span style='font-size:10.0pt;
+mso-bidi-font-size:14.0pt'>3</span></sub></i><i style='mso-bidi-font-style:
+normal'><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>=75.36</span></i><span
+style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span class=ptspecial><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>14</span></span><span
+style='font-size:14.0pt'>. Дана длина&nbsp;<i>L</i> окружности. Найти ее
+радиус&nbsp;<i>R</i> и площадь&nbsp;<i>S</i> круга, ограниченного этой
+окружностью, учитывая, что <i>L</i>&nbsp;=&nbsp;2·<span class=SpellE>&#960;</span>·<i>R</i>,
+&nbsp; &nbsp;<i>S</i>&nbsp;=&nbsp;<span class=SpellE>&#960;</span>·<i>R</i><sup>2</sup>.
+</span><i style='mso-bidi-font-style:normal'><span style='font-size:10.0pt;
+mso-bidi-font-size:14.0pt'>При </span></i><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-ansi-language:
+EN-US'>L</span></i><i style='mso-bidi-font-style:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>=11.89 результат: R=1.89
+S=11.22</span></i><span style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span class=ptspecial><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>15</span></span><span
+style='font-size:14.0pt'>. Дана площадь&nbsp;<i>S</i> круга. Найти его
+диаметр&nbsp;<i>D</i> и длину&nbsp;<i>L</i> окружности, ограничивающей этот
+круг, учитывая, что <i>L</i>&nbsp;=&nbsp;<span class=SpellE>&#960;</span>·<i>D</i>,
+&nbsp; &nbsp;<i>S</i>&nbsp;=&nbsp;<span class=SpellE>&#960;</span>·<i>D</i><sup>2</sup>/4.
+</span><i style='mso-bidi-font-style:normal'><span style='font-size:10.0pt;
+mso-bidi-font-size:14.0pt'>При </span></i><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-ansi-language:
+EN-US'>S</span></i><i style='mso-bidi-font-style:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>=9.08 результат: </span></i><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-size:10.0pt;
+mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US'>D</span></i><i
+style='mso-bidi-font-style:normal'><span style='font-size:10.0pt;mso-bidi-font-size:
+14.0pt'>=3.4 </span></i><i style='mso-bidi-font-style:normal'><span lang=EN-US
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US'>L</span></i><i
+style='mso-bidi-font-style:normal'><span style='font-size:10.0pt;mso-bidi-font-size:
+14.0pt'>=10.68</span></i><span style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span class=ptspecial><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>16</span></span><span
+style='font-size:14.0pt'>. Найти расстояние между двумя точками с заданными
+координатами&nbsp;<i>x</i><sub>1</sub> и&nbsp;<i>x</i><sub>2</sub> на числовой
+оси: |<i>x</i><sub>2</sub>&nbsp;&#8722;&nbsp;<i>x</i><sub>1</sub>|.<span
+style='mso-spacerun:yes'>  </span></span><i style='mso-bidi-font-style:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>При <span style='mso-bidi-font-style:
+italic'>x</span><sub>1</sub>=8.3 <span style='mso-bidi-font-style:italic'>x</span><sub>2</sub>=5.7
+результат: 2.6</span></i><span style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span class=ptspecial><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>17</span></span><span
+style='font-size:14.0pt'>. Даны три точки&nbsp;<i>A</i>, <i>B</i>,&nbsp;<i>C</i>
+на числовой оси. Найти длины отрезков&nbsp;<i>AC</i> и&nbsp;<i>BC</i> и их
+сумму.<span style='mso-spacerun:yes'>  </span></span><i style='mso-bidi-font-style:
+normal'><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>При<span
+class=GramE> <span style='mso-bidi-font-style:italic'>А</span></span>=9.7 <span
+style='mso-bidi-font-style:italic'>В</span>=–5 С=5.1 результат: АС=4.6 <span
+class=GramE>ВС</span>=10.1 АС+ВС=14.7</span></i><span style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span class=ptspecial><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>18</span></span><span
+style='font-size:14.0pt'>. Даны три точки&nbsp;<i>A</i>, <i>B</i>,&nbsp;<i>C</i>
+на числовой оси. Точка&nbsp;<i>C</i> расположена между точками&nbsp;<i>A</i>
+и&nbsp;<i>B</i>. Найти произведение длин отрезков&nbsp;<i>AC</i> и&nbsp;<i>BC</i>.
+</span><i style='mso-bidi-font-style:normal'><span style='font-size:10.0pt;
+mso-bidi-font-size:14.0pt'>При<span class=GramE> <span style='mso-bidi-font-style:
+italic'>А</span></span>=–6.8 <span style='mso-bidi-font-style:italic'>В</span>=9.3
+С=6.7 результат: 35.1</span></i><span style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span class=ptspecial><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>19</span></span><span
+style='font-size:14.0pt'>. Даны координаты двух противоположных вершин
+прямоугольника: (<i>x</i><sub>1</sub>,&nbsp;<i>y</i><sub>1</sub>), (<i>x</i><sub>2</sub>,&nbsp;<i>y</i><sub>2</sub>).
+Стороны прямоугольника параллельны осям координат. Найти периметр и площадь
+данного прямоугольника. </span><i style='mso-bidi-font-style:normal'><span
+style='font-size:10.0pt'>При <span style='mso-bidi-font-style:italic'>x</span></span></i><sub><span
+style='font-size:10.0pt'>1</span></sub><span style='font-size:10.0pt'>,&nbsp;<i>y</i><sub>1</sub><i
+style='mso-bidi-font-style:normal'>=</i></span><i style='mso-bidi-font-style:
+normal'><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>6.0 –9.4 </span></i><i><span
+style='font-size:10.0pt'>x</span></i><sub><span style='font-size:10.0pt'>2</span></sub><span
+style='font-size:10.0pt'>,&nbsp;<i>y</i><sub>2</sub><i style='mso-bidi-font-style:
+normal'>=</i></span><i style='mso-bidi-font-style:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>–9.4 –1.3 результат: P=47.0
+S=124.74</span></i><span style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=ptspecial><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>ABegin20</span></span><span
+style='font-size:14.0pt'>. Найти расстояние между двумя точками с заданными
+координатами (<i>x</i><sub>1</sub>,&nbsp;<i>y</i><sub>1</sub>) и&nbsp;(<i>x</i><sub>2</sub>,&nbsp;<i>y</i><sub>2</sub>)
+на плоскости. Расстояние вычисляется по формуле ((<i>x</i><sub>2</sub>&nbsp;&#8722;&nbsp;<i>x</i><sub>1</sub>)<sup>2</sup>&nbsp;+&nbsp;(<i>y</i><sub>2</sub>&nbsp;&#8722;&nbsp;<i>y</i><sub>1</sub>)<sup>2</sup>)<sup>1/2</sup>.</span><i
+style='mso-bidi-font-style:normal'><span style='font-size:10.0pt'> При <span
+style='mso-bidi-font-style:italic'>x</span></span></i><sub><span
+style='font-size:10.0pt'>1</span></sub><span style='font-size:10.0pt'>,&nbsp;<i>y</i><sub>1</sub><i
+style='mso-bidi-font-style:normal'>=</i></span><i style='mso-bidi-font-style:
+normal'><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>1.3 –9.4 </span></i><i><span
+style='font-size:10.0pt'>x</span></i><sub><span style='font-size:10.0pt'>2</span></sub><span
+style='font-size:10.0pt'>,&nbsp;<i>y</i><sub>2</sub><i style='mso-bidi-font-style:
+normal'>=</i></span><i style='mso-bidi-font-style:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>–2.7 –0.7 результат:8.81</span></i><span
+style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span class=ptspecial><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>21</span></span><span
+style='font-size:14.0pt'>. Даны координаты трех вершин треугольника: (<i>x</i><sub>1</sub>,&nbsp;<i>y</i><sub>1</sub>),
+(<i>x</i><sub>2</sub>,&nbsp;<i>y</i><sub>2</sub>), (<i>x</i><sub>3</sub>,&nbsp;<i>y</i><sub>3</sub>).
+Найти его периметр и площадь, используя формулу для расстояния между двумя
+точками на плоскости (<span class=GramE>см</span>. задание 20). Для нахождения
+площади треугольника со сторонами&nbsp;<span class=SpellE><i>a</i></span>, <span
+class=SpellE><i>b</i></span>, <span class=SpellE><i>c</i></span> использовать <i>формулу
+Герона</i>: </span><i><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'>S</span></i><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'>&nbsp;</span><span style='font-size:14.0pt'>=</span><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>&nbsp;</span><span
+style='font-size:14.0pt'>(</span><i><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>p</span></i><span class=GramE><span style='font-size:
+14.0pt'>·(</span></span><i><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'>p</span></i><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'>&nbsp;</span><span style='font-size:14.0pt'>&#8722;</span><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>&nbsp;<i>a</i></span><span
+style='font-size:14.0pt'>)·(</span><i><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>p</span></i><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>&nbsp;</span><span style='font-size:14.0pt'>&#8722;</span><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>&nbsp;<i>b</i></span><span
+style='font-size:14.0pt'>)·(</span><i><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>p</span></i><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>&nbsp;</span><span style='font-size:14.0pt'>&#8722;</span><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>&nbsp;<i>c</i></span><span
+style='font-size:14.0pt'>))<sup>1/2</sup>, где </span><i><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>p</span></i><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>&nbsp;</span><span
+style='font-size:14.0pt'>=</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>&nbsp;</span><span style='font-size:14.0pt'>(</span><i><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>a</span></i><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>&nbsp;</span><span
+style='font-size:14.0pt'>+</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>&nbsp;<i>b</i>&nbsp;</span><span style='font-size:
+14.0pt'>+</span><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'>&nbsp;<i>c</i></span><span style='font-size:14.0pt'>)/2 — <i>полупериметр</i>.
+</span><i style='mso-bidi-font-style:normal'><span style='font-size:10.0pt'>При
+<span style='mso-bidi-font-style:italic'>x</span></span></i><sub><span
+style='font-size:10.0pt'>1</span></sub><span style='font-size:10.0pt'>,&nbsp;<i>y</i><sub>1</sub><i
+style='mso-bidi-font-style:normal'>=</i></span><i style='mso-bidi-font-style:
+normal'><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>1.9 –7.9 </span></i><i><span
+style='font-size:10.0pt'>x</span></i><sub><span style='font-size:10.0pt'>2</span></sub><span
+style='font-size:10.0pt'>,&nbsp;<i>y</i><sub>2</sub><i style='mso-bidi-font-style:
+normal'>=9</i></span><i style='mso-bidi-font-style:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>.8 8.5 </span></i><i><span
+style='font-size:10.0pt'>x</span></i><sub><span style='font-size:10.0pt'>3</span></sub><span
+style='font-size:10.0pt'>,&nbsp;<i>y</i><sub>3</sub><i style='mso-bidi-font-style:
+normal'>=7</i></span><i style='mso-bidi-font-style:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>.6 –0.6 результат: P=36.83
+S=17.91</span></i><span style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span class=ptspecial><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>22</span></span><span
+style='font-size:14.0pt'>. Поменять местами содержимое переменных&nbsp;<i>A</i>
+и&nbsp;<i>B</i> и вывести новые значения&nbsp;<i>A</i> и&nbsp;<i>B</i>. <o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span class=ptspecial><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>23</span></span><span
+style='font-size:14.0pt'>. Даны переменные&nbsp;<i>A</i>, <i>B</i>,&nbsp;<i>C</i>.
+Изменить их значения, переместив содержимое&nbsp;<i>A</i> в&nbsp;<i>B</i>, <i>B</i>
+— в&nbsp;<i>C</i>, <i>C</i> — в&nbsp;<i>A</i>, и вывести новые значения
+переменных&nbsp;<i>A</i>, <i>B</i>,&nbsp;<i>C</i>. <o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span class=ptspecial><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>24</span></span><span
+style='font-size:14.0pt'>. Даны переменные&nbsp;<i>A</i>, <i>B</i>,&nbsp;<i>C</i>.
+Изменить их значения, переместив содержимое&nbsp;<i>A</i> в&nbsp;<i>C</i>, <i>C</i>
+— в&nbsp;<i>B</i>, <i>B</i> — в&nbsp;<i>A</i>, и вывести новые значения
+переменных&nbsp;<i>A</i>, <i>B</i>,&nbsp;<i>C</i>. <o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span class=ptspecial><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>25</span></span><span
+style='font-size:14.0pt'>. Найти значение функции <span class=SpellE><i>y</i></span>&nbsp;=&nbsp;3<i>x</i><sup>6</sup>&nbsp;&#8722;&nbsp;6<i>x</i><sup>2</sup>&nbsp;&#8722;&nbsp;7
+при данном значении&nbsp;<span class=SpellE><i>x</i></span>. </span><i
+style='mso-bidi-font-style:normal'><span style='font-size:10.0pt;mso-bidi-font-size:
+14.0pt'>При <span style='mso-bidi-font-style:italic'>x</span>=1.98 результат: </span></i><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-size:10.0pt;
+mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US'>y</span></i><i
+style='mso-bidi-font-style:normal'><span style='font-size:10.0pt;mso-bidi-font-size:
+14.0pt'>=150.24</span></i><span style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span class=ptspecial><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>26</span></span><span
+style='font-size:14.0pt'>. Найти значение функции <span class=SpellE><i>y</i></span>&nbsp;=&nbsp;4(<i>x</i>&#8722;3)<sup>6</sup>&nbsp;&#8722;&nbsp;7(<i>x</i>&#8722;3)<sup>3</sup>&nbsp;+&nbsp;2
+при данном значении&nbsp;<span class=SpellE><i>x</i></span>. </span><i
+style='mso-bidi-font-style:normal'><span style='font-size:10.0pt;mso-bidi-font-size:
+14.0pt'>При <span style='mso-bidi-font-style:italic'>x</span>=1.19 результат: </span></i><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-size:10.0pt;
+mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US'>y</span></i><i
+style='mso-bidi-font-style:normal'><span style='font-size:10.0pt;mso-bidi-font-size:
+14.0pt'>=184.16</span></i><span style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span class=ptspecial><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>27</span></span><span
+style='font-size:14.0pt'>. Дано число&nbsp;<i>A</i>. Вычислить&nbsp;<i>A</i><sup>8</sup>,
+используя вспомогательную переменную и три операции умножения. Для этого
+последовательно находить <i>A</i><sup>2</sup>, <i>A</i><sup>4</sup>, <i>A</i><sup>8</sup>.
+Вывести все найденные степени числа&nbsp;<i>A</i>. </span><i style='mso-bidi-font-style:
+normal'><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>При </span></i><i><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-ansi-language:
+EN-US'>A</span></i><i style='mso-bidi-font-style:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>=1.88 результат: <span
+style='mso-bidi-font-style:italic'>A</span><sup>2</sup>=3.53 <span
+style='mso-bidi-font-style:italic'>A</span><sup>4</sup>=12.49 <span
+style='mso-bidi-font-style:italic'>A</span><sup>8</sup>=156.05</span></i><span
+style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span class=ptspecial><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>28</span></span><span
+style='font-size:14.0pt'>. Дано число&nbsp;<i>A</i>. Вычислить <i>A</i><sup>15</sup>,
+<span class=GramE>используя две вспомогательные переменные и пять</span>
+операций умножения. Для этого последовательно находить <i>A</i><sup>2</sup>, <i>A</i><sup>3</sup>,
+<i>A</i><sup>5</sup>, <i>A</i><sup>10</sup>, <i>A</i><sup>15</sup>. Вывести все
+найденные степени числа&nbsp;<i>A</i>. </span><i style='mso-bidi-font-style:
+normal'><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>При </span></i><i><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-ansi-language:
+EN-US'>A</span></i><i style='mso-bidi-font-style:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>=2.06 результат: <span
+style='mso-bidi-font-style:italic'>A</span><sup>2</sup>=4.24 <span
+style='mso-bidi-font-style:italic'>A</span><sup>3</sup>=8.74 <span
+style='mso-bidi-font-style:italic'>A</span><sup>5</sup>=37.10 <span
+style='mso-bidi-font-style:italic'>A</span><sup>10</sup>=1376.17 <span
+style='mso-bidi-font-style:italic'>A</span><sup>15</sup>=51051.48</span></i><span
+style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span class=ptspecial><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>29</span></span><span
+style='font-size:14.0pt'>. Дано значение угла&nbsp;<span class=SpellE>&#945;</span>
+в градусах (0&nbsp;&#8804;&nbsp;<span class=SpellE>&#945;</span>&nbsp;&lt;&nbsp;360).
+Определить значение этого же угла в радианах, учитывая, что 180 = &#960;
+радианов. </span><span class=GramE><i><span style='font-size:10.0pt;mso-bidi-font-size:
+14.0pt'>При</span></i></span><i><span style='font-size:10.0pt;mso-bidi-font-size:
+14.0pt'> &#945; (градусы)=291.44 результат: &#945; (радианы)=5.08</span></i><span
+style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span class=ptspecial><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>30</span></span><span
+style='font-size:14.0pt'>. Дано значение угла&nbsp;<span class=SpellE>&#945;</span>
+в радианах (0&nbsp;&#8804;&nbsp;<span class=SpellE>&#945;</span>&nbsp;&lt;&nbsp;2·&#960;).
+Определить значение этого же угла в градусах, учитывая, что 180 = &#960;
+радианов. </span><span class=GramE><i><span style='font-size:10.0pt;mso-bidi-font-size:
+14.0pt'>При</span></i></span><i><span style='font-size:10.0pt;mso-bidi-font-size:
+14.0pt'> &#945; (радианы)=1.91 результат: &#945; (градусы)=109.49</span></i><span
+style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span class=ptspecial><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>31</span></span><span
+style='font-size:14.0pt'>. Дано значение температуры&nbsp;<i>T</i> в градусах
+Фаренгейта. Определить значение этой же температуры в градусах Цельсия.
+Температура по Цельсию&nbsp;<i>T<sub>C</sub></i> и температура по
+Фаренгейту&nbsp;<i>T<sub>F</sub></i> <span class=GramE>связаны</span> следующим
+соотношением: <i>T<sub>C</sub></i> = (<i>T<sub>F</sub></i> &#8722; 32)·5/9.</span><i><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'> При<span class=GramE> Т</span>
+(по Фаренгейту)=81.82 результат: Т (по Цельсию)=27.68</span></i><span
+style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span class=ptspecial><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>32</span></span><span
+style='font-size:14.0pt'>. Дано значение температуры <i>T</i> в градусах
+Цельсия. Определить значение этой же температуры в градусах Фаренгейта.
+Температура по Цельсию&nbsp;<i>T<sub>C</sub></i> и температура по
+Фаренгейту&nbsp;<i>T<sub>F</sub></i> <span class=GramE>связаны</span> следующим
+соотношением: <i>T<sub>C</sub></i> = (<i>T<sub>F</sub></i> &#8722; 32)·5/9.</span><i><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'> При<span class=GramE> Т</span>
+(по Цельсию)=26.42 результат: Т (по Фаренгейту)=79.56</span></i><span
+style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span class=ptspecial><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>33</span></span><span
+style='font-size:14.0pt'>. Известно, что <i>X</i>&nbsp;кг конфет стоит <i>A</i>&nbsp;рублей.
+Определить, сколько стоит 1&nbsp;кг и <i>Y</i>&nbsp;кг этих же конфет. </span><i><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>При Х=2.4<span class=GramE>
+А</span>=207.36 </span></i><i><span lang=EN-US style='font-size:10.0pt;
+mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US'>Y</span></i><i><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>=4.4 результат: стоимость 1
+кг конфет: 86.4 стоимость Y кг конфет: 380.16</span></i><span style='font-size:
+14.0pt'><o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span class=ptspecial><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>34</span></span><span
+style='font-size:14.0pt'>. Известно, что <i>X</i>&nbsp;кг шоколадных конфет
+стоит <i>A</i>&nbsp;рублей, а <i>Y</i>&nbsp;кг ирисок стоит <i>B</i>&nbsp;рублей.
+Определить, сколько стоит 1&nbsp;кг шоколадных конфет, 1&nbsp;кг ирисок, а
+также во сколько раз шоколадные конфеты дороже ирисок. </span><i><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>При Х=3.3 А=214.9 </span></i><i><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-ansi-language:
+EN-US'>Y</span></i><i><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>=1.0
+</span></i><i><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+mso-ansi-language:EN-US'>B</span></i><i><span style='font-size:10.0pt;
+mso-bidi-font-size:14.0pt'>=17.6 результат: стоимость 1 кг шок<span
+class=GramE>.</span> <span class=GramE>к</span>онфет: 65.12 стоимость 1 кг
+ирисок: 17.6 во сколько раз: 3.7</span></i><span style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span class=ptspecial><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>35</span></span><span
+style='font-size:14.0pt'>. Скорость лодки в стоячей воде <i>V</i>&nbsp;км/ч,
+скорость течения реки <i>U</i>&nbsp;км/ч (<i>U</i>&nbsp;&lt;&nbsp;<i>V</i>).
+Время движения лодки по озеру <i>T</i><sub>1</sub>&nbsp;ч, а по реке (против
+течения) — <i>T</i><sub>2</sub>&nbsp;ч. Определить путь <i>S</i>, пройденный
+лодкой (путь = время · скорость). Учесть, что при движении против течения
+скорость лодки уменьшается на величину скорости течения. </span><i><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>При </span></i><i><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-ansi-language:
+EN-US'>V</span></i><i><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>=7.0
+</span></i><i><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+mso-ansi-language:EN-US'>U</span></i><i><span style='font-size:10.0pt;
+mso-bidi-font-size:14.0pt'>=3.0 </span></i><i><span lang=EN-US
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US'>T</span></i><i><sub><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>1</span></sub></i><i><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>=4.0 </span></i><i><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-ansi-language:
+EN-US'>T</span></i><i><sub><span style='font-size:10.0pt;mso-bidi-font-size:
+14.0pt'>2</span></sub></i><i><span style='font-size:10.0pt;mso-bidi-font-size:
+14.0pt'>=4.0 результат: </span></i><i><span lang=EN-US style='font-size:10.0pt;
+mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US'>S</span></i><i><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>=44.0</span></i><span
+style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span class=ptspecial><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>36</span></span><span
+style='font-size:14.0pt'>. Скорость первого автомобиля <i>V</i><sub>1</sub>&nbsp;км/ч,
+второго — <i>V</i><sub>2</sub>&nbsp;км/ч, расстояние между ними <i>S</i>&nbsp;км.
+Определить расстояние между ними через <i>T</i>&nbsp;часов, если автомобили
+удаляются друг от друга, двигаясь в противоположных направлениях. Данное
+расстояние равно сумме начального расстояния и общего пути, проделанного
+автомобилями; общий путь = время · суммарная скорость. </span><i><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>При </span></i><i><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-ansi-language:
+EN-US'>V</span></i><i><sub><span style='font-size:10.0pt;mso-bidi-font-size:
+14.0pt'>1</span></sub></i><i><span style='font-size:10.0pt;mso-bidi-font-size:
+14.0pt'>=80.0 </span></i><i><span lang=EN-US style='font-size:10.0pt;
+mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US'>V</span></i><i><sub><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>2</span></sub></i><i><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>=70.0 </span></i><i><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-ansi-language:
+EN-US'>S</span></i><i><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>=120.0
+</span></i><i><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+mso-ansi-language:EN-US'>T</span></i><i><span style='font-size:10.0pt;
+mso-bidi-font-size:14.0pt'>=2.0 результат: 420.0</span></i><span
+style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span class=ptspecial><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>37</span></span><span
+style='font-size:14.0pt'>. Скорость первого автомобиля <i>V</i><sub>1</sub>&nbsp;км/ч,
+второго — <i>V</i><sub>2</sub>&nbsp;км/ч, расстояние между ними <i>S</i>&nbsp;км.
+Определить расстояние между ними через <i>T</i>&nbsp;часов, если автомобили первоначально
+движутся навстречу друг другу. Данное расстояние равно модулю разности
+начального расстояния и общего пути, проделанного автомобилями; общий путь =
+время · суммарная скорость. </span><i><span style='font-size:10.0pt;mso-bidi-font-size:
+14.0pt'>При </span></i><i><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+14.0pt;mso-ansi-language:EN-US'>V</span></i><i><sub><span style='font-size:
+10.0pt;mso-bidi-font-size:14.0pt'>1</span></sub></i><i><span style='font-size:
+10.0pt;mso-bidi-font-size:14.0pt'>=50.0 </span></i><i><span lang=EN-US
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US'>V</span></i><i><sub><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>2</span></sub></i><i><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>=70.0 </span></i><i><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-ansi-language:
+EN-US'>S</span></i><i><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>=20.0
+</span></i><i><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+mso-ansi-language:EN-US'>T</span></i><i><span style='font-size:10.0pt;
+mso-bidi-font-size:14.0pt'>=3.0 результат: 340.0</span></i><span
+style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span class=ptspecial><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>38</span></span><span
+style='font-size:14.0pt'>. Решить линейное уравнение <i>A</i>·<span
+class=SpellE><i>x</i></span>&nbsp;+&nbsp;<i>B</i>&nbsp;=&nbsp;0, заданное
+своими коэффициентами&nbsp;<i>A</i> и&nbsp;<i>B</i> (коэффициент&nbsp;<i>A</i>
+не&nbsp;равен&nbsp;0). </span><i><span style='font-size:10.0pt;mso-bidi-font-size:
+14.0pt'>При </span></i><i><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+14.0pt;mso-ansi-language:EN-US'>A</span></i><i><span style='font-size:10.0pt;
+mso-bidi-font-size:14.0pt'>=</span></i><i><span lang=EN-US style='font-size:
+10.0pt;mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US'>–7</span></i><i><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>.</span></i><i><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-ansi-language:
+EN-US'>0 B=–35.0 <span class=SpellE>результат</span>: x=–5.0</span></i><span
+style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span class=ptspecial><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>39</span></span><span
+style='font-size:14.0pt'>. Найти корни <i>квадратного уравнения</i> <i>A</i>·<i>x</i><sup>2</sup>&nbsp;+&nbsp;<i>B</i>·<span
+class=SpellE><i>x</i></span>&nbsp;+&nbsp;<i>C</i>&nbsp;=&nbsp;0, заданного
+своими коэффициентами <i>A</i>, <i>B</i>, <i>C</i> (<i>A</i>&nbsp;&gt;&nbsp;0),
+если известно, что дискриминант уравнения положителен. Вывести вначале <span
+class=GramE>меньший</span>, а затем больший из найденных корней. Корни
+квадратного уравнения находятся по формуле <i>x</i><sub>1,&nbsp;2</sub> = (&#8722;<i>B</i>&nbsp;±&nbsp;(<i>D</i>)<sup>1/2</sup>)/(2·<i>A</i>),
+где <i>D</i> — <i>дискриминант</i>, равный <i>B</i><sup>2</sup>&nbsp;&#8722;&nbsp;4·<i>A</i>·<i>C</i>.
+</span><i><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>При </span></i><i><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-ansi-language:
+EN-US'>A</span></i><i><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>=1.0
+</span></i><i><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+mso-ansi-language:EN-US'>B</span></i><i><span style='font-size:10.0pt;
+mso-bidi-font-size:14.0pt'>=–1.0 </span></i><i><span lang=EN-US
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US'>C</span></i><i><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>=–6.0 результат: </span></i><i><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-ansi-language:
+EN-US'>x</span></i><i><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>
+(меньшее значение)=–2.0 </span></i><i><span lang=EN-US style='font-size:10.0pt;
+mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US'>x</span></i><i><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'> (большее значение)=3.0</span></i><span
+style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span class=SpellE><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>ABegin</span></span><span class=ptspecial><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>40</span></span><span
+style='font-size:14.0pt'>. Найти решение <i>системы линейных уравнений</i> вида<br>
+</span><i><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>A</span></i><sub><span
+style='font-size:14.0pt'>1</span></sub><span style='font-size:14.0pt'>·</span><i><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>x</span></i><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>&nbsp;</span><span
+style='font-size:14.0pt'>+</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>&nbsp;<i>B</i></span><sub><span style='font-size:14.0pt'>1</span></sub><span
+style='font-size:14.0pt'>·</span><i><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>y</span></i><span style='font-size:14.0pt'> = </span><i><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>C</span></i><sub><span
+style='font-size:14.0pt'>1</span></sub><span style='font-size:14.0pt'>,<br>
+</span><i><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>A</span></i><sub><span
+style='font-size:14.0pt'>2</span></sub><span style='font-size:14.0pt'>·</span><i><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>x</span></i><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>&nbsp;</span><span
+style='font-size:14.0pt'>+</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>&nbsp;<i>B</i></span><sub><span style='font-size:14.0pt'>2</span></sub><span
+style='font-size:14.0pt'>·</span><i><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>y</span></i><span style='font-size:14.0pt'> = </span><i><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>C</span></i><sub><span
+style='font-size:14.0pt'>2</span></sub><span style='font-size:14.0pt'>,<br>
+заданной своими коэффициентами <i>A</i><sub>1</sub>, <i>B</i><sub>1</sub>, <i>C</i><sub>1</sub>,
+<i>A</i><sub>2</sub>, <i>B</i><sub>2</sub>, <i>C</i><sub>2</sub>, если
+известно, что данная система имеет единственное решение.<br>
+Воспользоваться формулами:<span style='mso-spacerun:yes'>      </span><span
+class=SpellE><i>x</i></span> = (<i>C</i><sub>1</sub>·<i>B</i><sub>2</sub>&nbsp;&#8722;&nbsp;<i>C</i><sub>2</sub>·<i>B</i><sub>1</sub>)/<i>D</i>,
+&nbsp; &nbsp; &nbsp; &nbsp;<span class=SpellE><i>y</i></span> = (<i>A</i><sub>1</sub>·<i>C</i><sub>2</sub>&nbsp;&#8722;&nbsp;<i>A</i><sub>2</sub>·<i>C</i><sub>1</sub>)/<i>D</i>,<span
+style='mso-spacerun:yes'>  </span>где <i>D</i> = <i>A</i><sub>1</sub>·<i>B</i><sub>2</sub>&nbsp;&#8722;&nbsp;<i>A</i><sub>2</sub>·<i>B</i><sub>1</sub>.</span><i><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'> <br>
+При </span></i><i><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+14.0pt;mso-ansi-language:EN-US'>A</span></i><i><sub><span style='font-size:
+10.0pt;mso-bidi-font-size:14.0pt'>1</span></sub></i><i><span style='font-size:
+10.0pt;mso-bidi-font-size:14.0pt'>=–3.0 </span></i><i><span lang=EN-US
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US'>B</span></i><i><sub><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>1</span></sub></i><i><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>=–1.0 </span></i><i><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-ansi-language:
+EN-US'>C</span></i><i><sub><span style='font-size:10.0pt;mso-bidi-font-size:
+14.0pt'>1</span></sub></i><i><span style='font-size:10.0pt;mso-bidi-font-size:
+14.0pt'>=–1.0 </span></i><i><span lang=EN-US style='font-size:10.0pt;
+mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US'>A</span></i><i><sub><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>2</span></sub></i><i><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>=–3.0 </span></i><i><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-ansi-language:
+EN-US'>B</span></i><i><sub><span style='font-size:10.0pt;mso-bidi-font-size:
+14.0pt'>2</span></sub></i><i><span style='font-size:10.0pt;mso-bidi-font-size:
+14.0pt'>=2.0 </span></i><i><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+14.0pt;mso-ansi-language:EN-US'>C</span></i><i><sub><span style='font-size:
+10.0pt;mso-bidi-font-size:14.0pt'>2</span></sub></i><i><span style='font-size:
+10.0pt;mso-bidi-font-size:14.0pt'>=11.0 результат: </span></i><i><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-ansi-language:
+EN-US'>x</span></i><i><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt'>=–1.0
+y=4.0<o:p></o:p></span></i></p>
+
+<p class=pttask0 align=left style='margin-top:3.75pt;margin-right:7.35pt;
+margin-bottom:0cm;margin-left:69.7pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-62.35pt'><span style='font-size:14.0pt;mso-bidi-font-style:italic'><o:p>&nbsp;</o:p></span></p>
+
+<div style='margin-left:35.45pt'>
+
+<h2 style='margin-top:3.0pt;margin-right:7.35pt;margin-bottom:0cm;margin-left:
+7.35pt;margin-bottom:.0001pt;background:#DAEEF3;mso-background-themecolor:accent5;
+mso-background-themetint:51'><span style='font-weight:normal;mso-bidi-font-weight:
+bold'><o:p>&nbsp;</o:p></span></h2>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
